@@ -1,0 +1,265 @@
+:root {
+    --body-bg-color: #e4e2dc;
+    --color-default: #c29818;
+    --light-color-default: #d7bd8e;
+    --light-grey: #dce4e3;
+    --text-color: #423308;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 1366px;
+    height: 768px;
+    left: 0px;
+    top: 0px;
+    background: var(--body-bg-color);
+}
+
+/* Título da página */
+.dashboard {
+    position: absolute;
+    top: 17px;
+    height: 50px;
+    left: 110px;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: all 0.5s;
+}
+
+.dashboard_moved {
+    left: 230px;
+    transition: all 0.5s;
+}
+
+/* Menu lateral */
+.sidebar {
+    position: absolute;
+    width: 80px;
+    height: 768px;
+    background: var(--color-default);
+    transition: all 0.5s;
+}
+
+.sidebar_open {
+    width: 200px;
+    transition: all 0.5s;
+}
+
+/* Caixas das opções do Menu lateral */
+.sidebar_button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**** Caixa Abrir Menu ****/
+.sidebar_button:nth-child(1) {
+    top: 15px;
+    transition: all 0.2s
+}
+
+.sidebar_button:nth-child(1):hover {
+    background-color: var(--light-color-default);
+    border-radius: 10px;
+    transition: all 0.5s
+}
+
+/**** Texto da Caixa Abrir Menu ****/
+.sidebar p:nth-child(2) {
+    color: var(--text-color);
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    /* colocar icone aqui */
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/**** Caixa Pesquisar ****/
+.sidebar_button:nth-child(3) {
+    top: 80px;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+}
+
+/**** Texto Caixa Pesquisar ****/
+.sidebar input:nth-child(4) {
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    width: 140px;
+    height: 50px;
+    color: var(--text-color);
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+/**** Caixa Dashboard ****/
+.sidebar_button:nth-child(5) {
+    top: 150px;
+}
+
+/**** Texto Caixa Dashboard ****/
+.sidebar p:nth-child(6) {
+    position: absolute;
+    top: 161px;
+    left: 63px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/**** Caixa Animais ****/
+.sidebar_button:nth-child(7) {
+    top: 200px;
+}
+
+/**** Texto Caixa Animais ****/
+.sidebar p:nth-child(8) {
+    position: absolute;
+    top: 211px;
+    left: 78px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/**** Caixa Clientes ****/
+.sidebar_button:nth-child(9) {
+    top: 250px;
+}
+
+/**** Texto Caixa Clientes ****/
+.sidebar p:nth-child(10) {
+    position: absolute;
+    top: 261px;
+    left: 78px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/**** Caixa Vets ****/
+.sidebar_button:nth-child(11) {
+    top: 300px;
+}
+
+/**** Texto Caixa Vets ****/
+.sidebar p:nth-child(12) {
+    position: absolute;
+    top: 310px;
+    left: 95px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/**** Caixa Ajustes ****/
+.sidebar_button:nth-child(13) {
+    top: 350px;
+}
+
+/**** Texto Caixa Ajustes ****/
+.sidebar p:nth-child(14) {
+    position: absolute;
+    top: 361px;
+    left: 82px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/**** Caixa Logout ****/
+.sidebar_button:nth-child(15) {
+    width: 100%;
+    height: 48px;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--light-color-default);
+    display: flex;
+    align-items: center;
+}
+
+/**** Ícone Caixa Logout ****/
+.button_logout {
+    position: absolute;
+    left: 25px;
+    transition: all 0.7s;
+}
+
+/**************************************************/
+
+#profile {
+    position: absolute;
+    bottom: 0px;
+    left: 2px;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 48px;
+}
+
+#profile img {
+    position: absolute;
+    border-radius: 15px;
+    height: 44px;
+    top: 2px;
+    left: 2px;
+}
+
+#profile div p:nth-child(1){
+    position: absolute;
+    top: 8px;
+    left: 56px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#profile div p:nth-child(2){
+    position: absolute;
+    top: 25px;
+    left: 56px;
+    font-size: 12px;
+}
+
+/**************************************************/
+
+.invisible {
+    visibility: hidden;
+    left: 0px;
+    transition: all 0.1s;
+}
+
+.visible {
+    visibility: visible;
+    left: 15px;
+    transition-delay: 0.2s;
+}
+
+.visible_logout {
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.expanded_with_sidebar {
+    transform: translateX(120px);
+}
+
+.expanded_search_field {
+    width: 140px;
+}

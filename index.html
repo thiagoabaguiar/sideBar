@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sidebar</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="sidebar">
+
+            <div class="sidebar_button" onclick=openSideBar(event)>
+                <img src="./images/menu.svg" alt="menu_icon">
+            </div>
+            <p class="invisible">Vets</p>
+
+            <div class="sidebar_button">
+                <img src="./images/search.svg" alt="menu_search">
+            </div>
+            <input class="invisible" type="text" placeholder="Buscar...">
+
+            <div class="sidebar_button">
+                <img src="./images/grid.svg" alt="menu_grid">
+            </div>
+            <p class="invisible">Dashboard</p>
+
+            <div class="sidebar_button">
+                <img src="./images/pet.svg" alt="menu_pet">
+            </div>
+            <p class="invisible">Animais</p>
+
+            <div class="sidebar_button">
+                <img src="./images/user.svg" alt="menu_user">
+            </div>
+            <p class="invisible">Clientes</p>
+
+            <div class="sidebar_button">
+                <img src="./images/vet.svg" alt="menu_vet">
+            </div>
+            <p class="invisible">Vets</p>
+
+            <div class="sidebar_button">
+                <img src="./images/settings.svg" alt="menu_settings">
+            </div>
+            <p class="invisible">Ajustes</p>
+
+            <div class="sidebar_button">
+                <img class="button_logout" src="./images/log-out.svg" alt="logout_icon">
+            </div>
+        </nav>
+
+        <h1 class="dashboard">Dashboard</h1>
+
+        <div id="profile" class="invisible">
+            <img src="./images/photo.jpg" alt="image_profile">
+            <div>
+                <p>Thiago</p>
+                <p>Veterinário</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
